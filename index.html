@@ -1,28 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+Header { 
+display: flex;
+justify-content: center;
+}
+Body{
+background: #000000 url('Images/bgjinx.png') right top/contain no-repeat fixed;;
+}
+main{
+border: 3px solid transparent;
+border-image: linear-gradient(30deg, #FFD700 , white);
+border-image-slice: 1;
+background-color:black;
+margin:auto;
+margin-top:5px;
+max-width: 1000px;
+text-align:center;
+}
+.headerbox1 {
+font-size: 20px;
+padding: 5px;
+color: #FFD700;
+
+border: 3px solid transparent;
+border-image: linear-gradient(30deg, #FFD700 , white);
+border-image-slice: 1;
+margin: 5px;
+}
+.headerbox2 {
+ --angle: 0deg;
+border: 3px solid transparent;
+padding: 5px;
+color: #FFD700;
+border-image: linear-gradient(var(--angle), #FFD700 , white);
+border-image-slice: 1;
+animation: 1s rotate linear infinite;
+margin: 5px;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+}
+#post{
+background-color:white;
+min-width: 1000px;
+border: 3px solid transparent;
+border-image: linear-gradient(30deg, #FFD700 , white);
+border-image-slice: 1;
+}
+
+</style>
 	<meta charset="UTF-8">
 	<meta name="description" content="I don't know what I'm doing">
 	<title>Hi I'm Kieth!</title>
 </head>
 <body>
 <header>
+	<div class = "headerbox1"><p>Hello it's <b> Kieth.</b> I'm learning how to make a website, and this is my testing ground!</p></div>
+	<div class = "headerbox2">
+<p style="text-align: center"><u><b>My other stuffs</b></u></p>
+<a href="https://www.youtube.com/channel/UC9z5dIKZb9hsvX-JgVMO-YA" target="_blank"><div style="text-align: center"><img src="Images/youtube.png" alt="youtube" width="25"></a>
+<a href="https://www.reddit.com/user/MakeLoveNotWarr/" target="_blank"><img src="Images/reddit.png" alt="youtube" width="25"></a>
+<a href="https://www.youtube.com/channel/UC9z5dIKZb9hsvX-JgVMO-YA" target="_blank"><img src="Images/email.svg" alt="email" width="25"></a></div>
+
+	 </div>
 </header>
 
 <main>
 	
-		<p>Hello <b> Kieth </b>
-	</p>
-	<p>
-		I like D&D
-	</p>
-	<img src="Images/1.jpg" alt="meme">
-	<div>
+	
+	<article><img src="Images/1.jpg" alt="meme" width="400"></article>
+<div>
 	<audio controls autoplay loop src="https://github.com/anthua06/anthua06.github.io/blob/main/sounds/I%20hold%20you.mp3?raw=true" type="audio/mp3"">your browser does not support Html5</audio>
 	</div>
 </main>
 
 <footer>
+
 </footer>
 </body>
 </html>

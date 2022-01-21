@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
 <head>
 <style>
 Header { 
@@ -7,17 +11,15 @@ display: flex;
 justify-content: center;
 }
 Body{
-background: #000000 url('Images/bgjinx.png') right top/contain no-repeat fixed;;
+background: black url('Images/bgjinx.png') right top/contain no-repeat fixed;
+background-image: url('Images/bgjinx.png'),  linear-gradient(117deg, rgba(255,0,169,1) 0%, rgba(2,22,49,1) 45%, rgba(2,22,49,1) 100%);
 }
 main{
-border: 3px solid transparent;
-border-image: linear-gradient(30deg, #FFD700 , white);
-border-image-slice: 1;
-background-color:black;
-margin:auto;
 margin-top:5px;
-max-width: 1000px;
 text-align:center;
+display:flex;
+justify-content:center;
+flex-direction: column;
 }
 .headerbox1 {
 font-size: 20px;
@@ -51,15 +53,28 @@ margin: 5px;
   initial-value: 0deg;
   inherits: false;
 }
-}
-#post{
-background-color:white;
-min-width: 1000px;
+
+Article{
+padding: 10px;
+padding-left:30px;
+padding-right:30px;
+width:808px;
+margin:auto;
+margin-top: 20px;
+background-color:transparent;
 border: 3px solid transparent;
 border-image: linear-gradient(30deg, #FFD700 , white);
 border-image-slice: 1;
 }
-
+H1 {
+font-size: 40px;
+color: gold;
+font-family: 'Playfair Display SC', serif;
+}
+P {
+font-size: 25px;
+color: gold;
+}
 </style>
 	<meta charset="UTF-8">
 	<meta name="description" content="I don't know what I'm doing">
@@ -80,14 +95,20 @@ border-image-slice: 1;
 <main>
 	
 	
-	<article><img src="Images/1.jpg" alt="meme" width="400"></article>
-<div>
-	<audio controls autoplay loop src="https://github.com/anthua06/anthua06.github.io/blob/main/sounds/I%20hold%20you.mp3?raw=true" type="audio/mp3"">your browser does not support Html5</audio>
-	</div>
+	<article>
+<h1>Meme of the day</h1>
+<p>Just a meme of a D&D character in a campaign that I'm in. I found on my computer and put it here. It's funnier with context I swear. </p>
+<img src="Images/1.jpg" alt="meme" width="400">
+</article>
+<article>
+<h1>Cool song.</h1>
+<p>A song I found on youtube that I thought was great ~</p>
+<div><audio controls autoplay loop src="https://github.com/anthua06/anthua06.github.io/blob/main/sounds/I%20hold%20you.mp3?raw=true" type="audio/mp3"">your browser does not support Html5</audio>
+</div>
+</article>
 </main>
 
 <footer>
-
 </footer>
 </body>
 </html>
